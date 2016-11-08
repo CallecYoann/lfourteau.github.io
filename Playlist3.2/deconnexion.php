@@ -1,3 +1,4 @@
+<!-- Détruit les variables de session quand on se déconnecte -->
 <?php
 session_start();
 session_destroy (); ?>

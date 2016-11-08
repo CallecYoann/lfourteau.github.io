@@ -1,3 +1,4 @@
+<!-- Espace perso de l'application qui reprend la navbar et le carroussel -->
 <!DOCTYPE html>
 <html>
   <head>

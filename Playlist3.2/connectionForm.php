@@ -1,3 +1,4 @@
+<!-- // Formulaire de connection à la BDD -->
 <!DOCTYPE html>
 <html>
   <head>

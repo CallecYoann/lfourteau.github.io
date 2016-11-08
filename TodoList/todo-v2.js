@@ -84,34 +84,32 @@ function generateTodo(task) {
 
     /*BUTTONS & innerHTML*/
 
-    var todo_buttonDel = document.createElement("input");
-    todo_buttonDel.type = "button";
-    todo_buttonDel.value = "X";
+    var todo_buttonDel = document.createElement("button");
+    todo_buttonDel.innerHTML = "X";
 
     //CROSSING TASK INTITULATE UPPON CLIKING "X" BUTTON
     todo_buttonDel.addEventListener("click", function() {
-    createSpan.classList.toggle("crossed");
+        createSpan.classList.toggle("crossed");
     });
 
-    var todo_buttonEdit = document.createElement("input");
-    todo_buttonEdit.type = "button";
-    todo_buttonEdit.value = "Edit";
+    var todo_buttonEdit = document.createElement("button");
+    todo_buttonEdit.innerHTML = "Edit";
 
     // todo_buttonEdit.addEventListener("click", function() {
-    // ButtonValidEdit.classList.toggle("show");
+    //     ButtonValidEdit.classList.toggle("show");
     //
-    //   prioritySelect = task.priority;
-    //   commentsTextArea  = task.comments;
-    //   toggleFormVisibility();
-    //   ButtonValidEdit.addEventListener("click", function() {
-    //   create_Comments.innerHTML = "Commentaires : " + commentsTextArea;
-    //   ButtonValidEdit.classList.toggle("show");
-    //   toggleFormVisibility();
-    //
-    //
+    //     prioritySelect = task.priority;
+    //     commentsTextArea = task.comments;
+    //     toggleFormVisibility();
+    //     ButtonValidEdit.addEventListener("click", function() {
+    //         create_Comments.innerHTML = "Commentaires : " + commentsTextArea;
+    //         ButtonValidEdit.classList.toggle("show");
+    //         toggleFormVisibility();
     //
     //
-    //   });
+    //
+    //
+    //     });
     // });
 
     createSpan.innerHTML = task.intitule;
@@ -119,11 +117,12 @@ function generateTodo(task) {
     //comments AND Deadline SPANS GENERATION
 
     var create_Deadline = document.createElement("span");
-    create_Deadline.innerHTML = "Deadline : " + task.deadline;
+    create_Deadline.className = "columnDeadline"
+    create_Deadline.innerHTML = task.deadline;
 
     var create_Comments = document.createElement("span");
-    create_Comments.className = "comments_span";
-    create_Comments.innerHTML = "Commentaires : " + task.comments;
+    create_Deadline.className = "columnComment"
+    create_Comments.innerHTML = task.comments;
 
 
     /*CHILDREN IMPLEMENTATION*/
@@ -172,4 +171,4 @@ ButtonValid.addEventListener("click", function() {
     toggleFormVisibility();
     ButtonValid.classList.toggle("show");
 
-  });
+});

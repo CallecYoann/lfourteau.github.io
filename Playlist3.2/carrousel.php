@@ -1,6 +1,4 @@
-
-
-
+<!-- Création du carroussel appellé dans l'espace perso et dans l'index -->
 <div class="container">
   <br>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">

@@ -3,6 +3,7 @@
 <?php
 
 define('SQL_DSN', 'mysql:dbname=testlist;host=localhost;chaset=utf8');
+// Penser à modifier les deux lignes suivantes selon les paramètre de connexion du SGBD
 define('SQL_USERNAME', 'root');
 define('SQL_PASSWORD', 'lulastar37');
 

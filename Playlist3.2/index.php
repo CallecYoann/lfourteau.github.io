@@ -1,4 +1,4 @@
-
+<!-- Première page appelée qui permet de se connecter ou de s'inscrire -->
 <!DOCTYPE html>
 <html>
   <head>
@@ -19,6 +19,7 @@
 
   <body>
     <header>
+      <!-- Crétion d'une navbar spécifique à la page d'index (différente de "navbar.php") -->
       <nav class="navbar navbar-inverse">
         <div class="container-fluid">
           <div class="navbar-header">
@@ -32,6 +33,7 @@
         </div>
       </nav>
     </header>
+    <!-- Appel du carroussel -->
     <div id = "carroussel">
       <h1>Actualité musicale</h1>
       <?php
