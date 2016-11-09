@@ -11,7 +11,7 @@ session_destroy (); ?>
   <body>
     <script type="text/javascript">
 
-    alert("Vous avez été deconnecté avec succès");
+    alert("You have been logged out successfully.");
     window.location = "index.php";
 
   </script>

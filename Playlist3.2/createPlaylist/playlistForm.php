@@ -9,10 +9,10 @@ include ('../navbarCall.php');
     <meta charset="utf-8">
     <title></title>
   </head>
-  <body> Créer ma nouvelle playlist
+  <body> Playlist creation
     <form class="" action="playlistCreation.php" method="post">
-      <input type="text" placeholder="nom de la playlist" name="playlistName" value="">
-      <button type="submit" name="button">Valider</button>
+      <input type="text" placeholder="Playlist name" name="playlistName" value="">
+      <button type="submit" name="button">Validate</button>
     </form>
   </body>
 

@@ -9,7 +9,7 @@ require ('connectBdd.php');
     </div>
     <ul class="nav navbar-nav">
       <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="">Mes playlists
+        <a class="dropdown-toggle" data-toggle="dropdown" href="">My playlists
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <!-- Permet de récupérer le nom des playlistes dans la BDD et de les ajouter au dropdown menu de la navbar -->
@@ -28,15 +28,15 @@ require ('connectBdd.php');
         </ul>
       </li>
       <!-- Bouton de création d'une nouvelle playlist -->
-      <li><a href="/createPlaylist/playlistForm.php">Créer une nouvelle playlist</a>
+      <li><a href="/createPlaylist/playlistForm.php">Create a new playlist</a>
       </li>
       <!-- Bouton d'ajout d'un nouveau titre -->
-      <li><a href="/addTrack/addForm.php">Ajouter un nouveau titre</a>
+      <li><a href="/addTrack/addForm.php">Add a track</a>
       </li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <!-- Affiche le nom de l'utilisateur réccupérer par la variable de session -->
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span><?php echo ' Bonjour ' .$_SESSION['pseudo']; ?></a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span><?php echo ' Hello ' .$_SESSION['pseudo']; ?></a></li>
       <!-- Bouton de deconnexion -->
       <li><a href="/deconnexion.php"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
     </ul>

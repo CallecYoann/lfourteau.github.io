@@ -1,3 +1,7 @@
 #carroussel h1 {
   text-align : center;
 }
+
+#carouselTitle {
+  font-family: 'Shrikhand', cursive;
+}
